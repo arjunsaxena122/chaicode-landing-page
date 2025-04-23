@@ -17,7 +17,7 @@ function Testimonial() {
             "Our cohorts are being taught by top industry experts and educators"
           }
         />
-         <TestimonialCard
+        <TestimonialCard
           link={"/chai-assets/chai-gray.png"}
           imgAlt={"teaching"}
           title={"Taught by Professionals"}
@@ -25,7 +25,7 @@ function Testimonial() {
             "Our cohorts are being taught by top industry experts and educators"
           }
         />
-         <TestimonialCard
+        <TestimonialCard
           link={"/chai-assets/chai-gray.png"}
           imgAlt={"teaching"}
           title={"Taught by Professionals"}
@@ -33,7 +33,7 @@ function Testimonial() {
             "Our cohorts are being taught by top industry experts and educators"
           }
         />
-         <TestimonialCard
+        <TestimonialCard
           link={"/chai-assets/chai-gray.png"}
           imgAlt={"teaching"}
           title={"Taught by Professionals"}
@@ -41,7 +41,7 @@ function Testimonial() {
             "Our cohorts are being taught by top industry experts and educators"
           }
         />
-         <TestimonialCard
+        <TestimonialCard
           link={"/chai-assets/chai-gray.png"}
           imgAlt={"teaching"}
           title={"Taught by Professionals"}
@@ -50,6 +50,9 @@ function Testimonial() {
           }
         />
       </div>
+      <button className="flex justify-center items-center border px-4 py-2 rounded bg-linear-to-r from-orange-600 to-[#F97316] border-none mb-10 cursor-pointer">
+        Join all live cohorts
+      </button>
     </section>
   );
 }
