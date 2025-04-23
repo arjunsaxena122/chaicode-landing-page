@@ -1,4 +1,5 @@
 import { GoDotFill } from "react-icons/go";
+import HeroButton from "./HeroButton";
 
 function HeroPage() {
   return (
@@ -16,10 +17,7 @@ function HeroPage() {
         Alumni Network, Doubt sessions, Group projects and so many other
         activities to keep you on track.
       </p>
-      <button className="flex justify-center items-center border px-4 py-2 rounded bg-linear-to-r from-orange-600 to-[#F97316] border-none mb-10 cursor-pointer">
-        Check all Live Cohorts{" "}
-        <img src="/gif/liveBlinker.gif" alt="" className="w-10 " />
-      </button>
+      <HeroButton text={"Check all Live Cohorts"} link={"/gif/liveBlinker.gif"} />
       <iframe
         width="560"
         height="315"
