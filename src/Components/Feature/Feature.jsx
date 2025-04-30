@@ -1,12 +1,15 @@
 import FeatureCard from "./FeatureCard";
+import HiteshSirCard from "./HiteshSirCard";
 
 function Feature() {
   return (
     <section className="flex justify-center items-center flex-col">
-      <h3 className="text-5xl my-2">Buy Why ChaiCode ?</h3>
-      <p>ChaiCode exists because we love tech and teaching</p>
-      <div className="grid grid-cols-3 mx-10 my-10 gap-10 ">
-        <div className="grid grid-rows-3">
+      <h3 className="text-4xl text-center mx-3 md:mx-0 md:text-6xl my-3 font-bold">Buy Why ChaiCode ?</h3>
+      <p className="text-sm text-center mx-5 md:mx-0 md:text-lg my-2">
+        ChaiCode exists because we love tech and teaching
+      </p>
+      <div className="grid grid-cols-1 md:grid-cols-3 place-items-center mx-4 md:mx-10 my-10 gap-10 ">
+        <div className="flex flex-col items-center gap-10">
           <FeatureCard
             title={"Comprehensive Curriculum"}
             description={
@@ -26,29 +29,10 @@ function Feature() {
             }
           />
         </div>
-        <div className="border rounded px-2 py-4">
-          <img
-            src="/chai-assets/chai-gray.png"
-            alt="hitest-sir-image"
-            className="w-56 flex justify-self-center border px-3 py-5 rounded"
-          />
-          <div className="flex items-start flex-col px-2">
-            <h3 className="text-2xl my-3">Hitesh Choudhary</h3>
-            <p className="text-justify">
-              retired from corporate and full time YouTuber, x founder of LCO
-              (accquired), C CTO, Sr. Director at PW. 2 YT channels (950k &
-              470k), stepped into 43 countrires.
-            </p>
-          </div>
-          <div className="flex items-start flex-col px-2">
-            <h3 className="text-2xl my-3">Approach</h3>
-            <p>
-              Project based courses with peer learning and bouties with many
-              activities
-            </p>
-          </div>
-        </div>
-        <div className="grid grid-rows-3">
+
+        <HiteshSirCard />
+
+        <div className="flex flex-col items-center gap-10">
           <FeatureCard
             title={"Code and Chill"}
             description={
@@ -70,8 +54,8 @@ function Feature() {
         </div>
       </div>
 
-      <button className="flex justify-center items-center border px-4 py-2 rounded bg-linear-to-r from-orange-600 to-[#F97316] border-none mb-10 cursor-pointer">
-        Join all live cohorts
+      <button className="flex justify-center items-center border px-6 py-3 my-12 rounded bg-gradient-to-r from-orange-600 to-[#F97316] dark:border-none  border-amber-700 outline-none mb-10 cursor-pointer transition-transform ease-in-out duration-500 hover:scale-95">
+        Get chai member
       </button>
     </section>
   );
