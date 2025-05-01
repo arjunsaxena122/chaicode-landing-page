@@ -2,57 +2,24 @@ import TestimonialCard from "./TestimonialCard";
 
 function Testimonial() {
   return (
-    <section className="flex justify-center items-center flex-col py-5 my-8">
-      <h3 className="text-5xl my-2">Our Students Feedback</h3>
-      <p>
+    <section
+      className="flex justify-center items-center flex-col md:py-5 md:my-8 text-center"
+      id="review"
+    >
+      <h3 className="text-4xl md:text-6xl my-2  font-bold">
+        Our Students Feedback
+      </h3>
+      <p className=" text-base text-center mx-3 md:mx-0 md:text-lg mt-2">
         Explore the incredible advantages of enrolling in our courses and
         enhancing your skills
       </p>
-      <div className="grid grid-cols-3 mt-10 mx-10">
-        <TestimonialCard
-          link={"/chai-assets/chai-gray.png"}
-          imgAlt={"teaching"}
-          title={"Taught by Professionals"}
-          description={
-            "Our cohorts are being taught by top industry experts and educators"
-          }
-        />
-        <TestimonialCard
-          link={"/chai-assets/chai-gray.png"}
-          imgAlt={"teaching"}
-          title={"Taught by Professionals"}
-          description={
-            "Our cohorts are being taught by top industry experts and educators"
-          }
-        />
-        <TestimonialCard
-          link={"/chai-assets/chai-gray.png"}
-          imgAlt={"teaching"}
-          title={"Taught by Professionals"}
-          description={
-            "Our cohorts are being taught by top industry experts and educators"
-          }
-        />
-        <TestimonialCard
-          link={"/chai-assets/chai-gray.png"}
-          imgAlt={"teaching"}
-          title={"Taught by Professionals"}
-          description={
-            "Our cohorts are being taught by top industry experts and educators"
-          }
-        />
-        <TestimonialCard
-          link={"/chai-assets/chai-gray.png"}
-          imgAlt={"teaching"}
-          title={"Taught by Professionals"}
-          description={
-            "Our cohorts are being taught by top industry experts and educators"
-          }
-        />
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-14 md:gap-10 px-2 py-10 md:py-20">
+        <TestimonialCard id="1909991433211203701" />
+        <TestimonialCard id="1910028067134636214" />
+        <TestimonialCard id="1910028187192435136" />
+        <TestimonialCard id="1910136352450166834" />
+        <TestimonialCard id="1910275278686822749" />
       </div>
-      <button className="flex justify-center items-center border px-4 py-2 rounded bg-linear-to-r from-orange-600 to-[#F97316] border-none mb-10 cursor-pointer">
-        Join all live cohorts
-      </button>
     </section>
   );
 }
