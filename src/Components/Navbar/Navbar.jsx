@@ -17,9 +17,9 @@ function Navbar({ themeToggle, handleThemeToggle }) {
 
   return (
     <nav className="bg-[#FFFF] dark:bg-[#000]  fixed top-0 w-screen z-50">
-      <div className="flex justify-around items-center py-4">
+      <div className="flex justify-between items-center py-4 px-4 md:px-5 lg:px-10">
         <a href="/">
-          <div className="w-28 md:w-36 px-2">
+          <div className="w-28 md:w-36 lg:w-44 px-2">
             {themeToggle ? (
               <img
                 src="/chai-assets/chaicode-black.png"
@@ -35,7 +35,7 @@ function Navbar({ themeToggle, handleThemeToggle }) {
             )}
           </div>
         </a>
-        <ul className="hidden md:flex md:items-center md:gap-x-10">
+        <ul className="hidden md:flex md:items-center md:gap-x-4 lg:gap-x-10">
           <a href="#cohort">
             <li
               className="flex items-center gap-x-1 cursor-pointer "
@@ -66,7 +66,7 @@ function Navbar({ themeToggle, handleThemeToggle }) {
           </a>
         </ul>
 
-        <div className="hidden md:flex items-center gap-4">
+        <div className="hidden md:flex items-center gap-4 lg:px-20">
           <a
             href="https://courses.chaicode.com/learn/accounts/signin"
             target="_blank"
@@ -93,17 +93,32 @@ function Navbar({ themeToggle, handleThemeToggle }) {
 
         {/* For Mobile Devices */}
         <div className="md:hidden ">
-          <div
-            className="text-[#F07316] cursor-pointer px-2 text-lg  py-0.5"
-            onClick={handlHamburgerToggle}
-          >
-            {isHamburger ? "X" : "☰"}
+          <div className="flex items-center gap-3">
+            <div>
+              {themeToggle ? (
+                <FiMoon
+                  onClick={handleThemeToggle}
+                  className="text-lg cursor-pointer"
+                />
+              ) : (
+                <IoIosSunny
+                  onClick={handleThemeToggle}
+                  className="text-lg cursor-pointer"
+                />
+              )}
+            </div>
+            <div
+              className="text-[#F07316] cursor-pointer px-2 text-lg  py-0.5 transition-all duration-500 ease-in-out"
+              onClick={handlHamburgerToggle}
+            >
+              {isHamburger ? "X" : "☰"}
+            </div>
           </div>
 
           <div
-            className={`w-full absolute  dark:bg-[#170b0b] h-screen my-4 flex flex-col gap-5 justify-center items-center  ${
-              isHamburger ? "translate-x-0" : "-translate-x-100"
-            } duration-300 transition-transform ease-in-out left-0 dark:text-white  text-black bg-amber-50`}
+            className={`w-full min-h-screen absolute  dark:bg-[#170b0b] h-screen my-4 flex flex-col gap-5 justify-center items-center  ${
+              isHamburger ? "translate-x-0" : "-translate-x-full"
+            } duration-300 transition-transform ease-in-out left-0 dark:text-white  text-black bg-amber-50 z-50 backdrop-blur-xl`}
           >
             <ul className="flex flex-col font-bold gap-5">
               <li className="flex items-center gap-x-1 cursor-pointer">
@@ -126,7 +141,7 @@ function Navbar({ themeToggle, handleThemeToggle }) {
                 Reviews
               </li>
             </ul>
-            <div>
+            <div className="mb-4">
               <a
                 href="https://courses.chaicode.com/learn/accounts/signin"
                 target="_blank"
@@ -137,19 +152,6 @@ function Navbar({ themeToggle, handleThemeToggle }) {
                   <LuLogIn />
                 </button>
               </a>
-            </div>
-            <div>
-              {themeToggle ? (
-                <FiMoon
-                  onClick={handleThemeToggle}
-                  className="text-lg cursor-pointer"
-                />
-              ) : (
-                <IoIosSunny
-                  onClick={handleThemeToggle}
-                  className="text-lg cursor-pointer"
-                />
-              )}
             </div>
           </div>
         </div>
