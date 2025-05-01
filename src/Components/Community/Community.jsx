@@ -17,7 +17,11 @@ function Community() {
             className="w-full h-full object-cover overflow-hidden rounded-full"
           />
         </div>
-        <a href="https://hitesh.ai/discord" target="_blank">
+        <a
+          href="https://hitesh.ai/discord"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <button className="self-center w-fit flex justify-center items-center border md:px-15 md:py-4 md:my-8 px-6 py-3 rounded-2xl bg-[#ca8a04] border-[#a97913] mb-10 cursor-pointer text-black font-bold text-sm md:text-lg transition-transform ease-in-out duration-300 hover:scale-95 outline-none">
             80,000 Active <br /> coders in Discord
           </button>

@@ -3,13 +3,15 @@ import HiteshSirCard from "./HiteshSirCard";
 
 function Feature() {
   return (
-    <section className="flex justify-center items-center flex-col">
-      <h3 className="text-4xl text-center mx-3 md:mx-0 md:text-6xl my-3 font-bold">Buy Why ChaiCode ?</h3>
-      <p className="text-sm text-center mx-5 md:mx-0 md:text-lg my-2">
+    <section className="flex justify-center items-center flex-col px-4 md:px-10 w-full max-w-7xl">
+      <h3 className="text-4xl text-center mx-3 md:mx-0 md:text-6xl my-3 font-bold">
+        Buy Why ChaiCode ?
+      </h3>
+      <p className="text-sm text-center md:text-lg max-w-2xl">
         ChaiCode exists because we love tech and teaching
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-3 place-items-center mx-4 md:mx-10 my-10 gap-10 ">
-        <div className="flex flex-col items-center gap-10">
+      <div className="grid grid-cols-1 md:grid-cols-3 place-items-center my-10 w-full ">
+        <div className="flex flex-col items-center gap-10 w-full md:w-md">
           <FeatureCard
             title={"Comprehensive Curriculum"}
             description={
@@ -30,9 +32,11 @@ function Feature() {
           />
         </div>
 
-        <HiteshSirCard />
+        <div className="flex justify-center items-center">
+          <HiteshSirCard />
+        </div>
 
-        <div className="flex flex-col items-center gap-10">
+        <div className="flex flex-col items-center gap-10 w-full md:w-md lg:w-lg">
           <FeatureCard
             title={"Code and Chill"}
             description={

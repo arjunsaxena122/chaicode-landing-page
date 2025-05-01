@@ -1,23 +1,32 @@
-function LiveCard({ video, title, desc, discountPrice, actualPrice }) {
+function LiveCard({ video, title, desc, discountPrice, actualPrice , liveLink }) {
   return (
-    <div className="border rounded-3xl px-3 py-3">
-      <iframe
-        className="w-full h-[300px] p-4"
-        src={video}
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
-      ></iframe>
-      <div className="flex flex-col">
-        <h3>{title}</h3>
-        <p>{desc}</p>
-        <div className="flex gap-5">
-        <span>{discountPrice}</span>
-        <span className="line-through">{actualPrice}</span>
+    <div className="w-full rounded-2xl border border-slate-800 shadow-2xl overflow-hidden flex justify-center flex-col bg-slate-900 hover:shadow-amber-700 transition-all ease-in-out duration-400 cursor-pointer ">
+      <div className="w-full flex justify-center items-center aspect-video">
+        <iframe
+          className="w-full h-full"
+          src={video}
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+        ></iframe>
+      </div>
+
+      <div className="w-full flex flex-col gap-3 p-5">
+        <h3 className="text-2xl font-bold text-[#F97316] text-left">{title}</h3>
+        <p className="text-sm text-gray-300 text-justify">{desc}</p>
+        <div className="flex items-center gap-4 mt-2">
+          <span className="text-lg font-bold text-white">{discountPrice}</span>
+          <span className="text-sm text-gray-400 line-through">
+            {actualPrice}
+          </span>
         </div>
-        <button className="bg-[#F97316] mx-2 my-4 rounded py-2">Buy Now</button>
+        <a href={liveLink} target="_blank" className="bg-[#F97316] hover:bg-orange-600 text-white font-semibold py-2 mt-4 rounded-lg transition-all ease-in-out duration-400 cursor-pointer tracking-wider text-center">
+          <button>
+            Learn Now{" "}
+          </button>
+        </a>
       </div>
     </div>
   );
