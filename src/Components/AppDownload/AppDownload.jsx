@@ -111,6 +111,7 @@ function AppDownload() {
           <a
             href="https://apps.apple.com/in/app/chaicode/id6504993143"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <button className="flex justify-center items-center border px-6 py-2 bg-gradient-to-r from-orange-600 to-[#F97316] border-none mb-10 cursor-pointer gap-4 rounded-2xl">
               <MdOutlineFileDownload
@@ -123,21 +124,24 @@ function AppDownload() {
               </p>
             </button>
           </a>
-          <button className="flex justify-center items-center border px-4 py-2 rounded-2xl bg-gradient-to-r from-orange-600 to-[#F97316] border-none mb-10 cursor-pointer gap-2">
-            <MdOutlineFileDownload
-              className="text-xl"
-              aria-label="Download Google Play"
-            />
-            <p className="px-2">
-              Get it on
-              <br />
-              <span className="font-bold">Google Play</span>
-            </p>
-          </button>
+
           <a
             href="https://play.google.com/store/apps/details?id=com.chaicode.courses&pcampaignid=web_share"
             target="_blank"
-          ></a>
+            rel="noopener noreferrer"
+          >
+            <button className="flex justify-center items-center border px-4 py-2 rounded-2xl bg-gradient-to-r from-orange-600 to-[#F97316] border-none mb-10 cursor-pointer gap-2">
+              <MdOutlineFileDownload
+                className="text-xl"
+                aria-label="Download Google Play"
+              />
+              <p className="px-2">
+                Get it on
+                <br />
+                <span className="font-bold">Google Play</span>
+              </p>
+            </button>
+          </a>
         </div>
       </div>
     </section>
