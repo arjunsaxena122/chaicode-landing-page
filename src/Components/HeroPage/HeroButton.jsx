@@ -6,9 +6,10 @@ function HeroButton({ text }) {
       href="https://courses.chaicode.com/learn/view-all?show=batch&type=17"
       target="_blank"
       rel="noopener noreferrer"
+      className="inline-block mt-4 md:mt-6"
     >
-      <button className="flex justify-center items-center border-none px-4 py-2 rounded-md text-sm  md:px-10 md:py-4 md:rounded-xl mb-10 md:mb-0 mt-2 cursor-pointer md:text-xl text-white bg-gradient-to-r from-orange-600 to-[#F97316] gap-2 transition-transform ease-in-out duration-400 active:scale-105">
-        <IoCodeSlashSharp />
+      <button className="flex justify-center items-center px-5 py-2 md:px-8 md:py-3 rounded-lg text-sm md:text-lg font-semibold text-white bg-[#F97316] hover:bg-orange-600 shadow-md hover:shadow-lg gap-2 transition-all duration-300 ease-in-out">
+        <IoCodeSlashSharp className="text-lg md:text-xl" />
         {text}
       </button>
     </a>
@@ -16,4 +17,3 @@ function HeroButton({ text }) {
 }
 
 export default HeroButton;
-//
