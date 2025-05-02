@@ -16,10 +16,10 @@ function Navbar({ themeToggle, handleThemeToggle }) {
   };
 
   return (
-    <nav className="bg-[#FFFF] dark:bg-[#000]  fixed top-0 w-screen z-50">
-      <div className="flex justify-between items-center py-4 px-4 md:px-5 lg:px-10">
+    <nav className="bg-[#FFFF] dark:bg-[#000]  fixed top-0 w-full z-50">
+      <div className="flex justify-between items-center py-4 px-4 md:px-10 lg:px-10 ">
         <a href="/">
-          <div className="w-28 md:w-36 lg:w-44 px-2">
+          <div className="w-32 md:w-36 lg:w-44">
             {themeToggle ? (
               <img
                 src="/chai-assets/chaicode-black.png"
@@ -35,7 +35,7 @@ function Navbar({ themeToggle, handleThemeToggle }) {
             )}
           </div>
         </a>
-        <ul className="hidden md:flex md:items-center md:gap-x-4 lg:gap-x-10">
+        <ul className="hidden md:flex md:items-center md:gap-x-5  lg:gap-x-10">
           <a href="#cohort">
             <li
               className="flex items-center gap-x-1 cursor-pointer "
@@ -66,7 +66,7 @@ function Navbar({ themeToggle, handleThemeToggle }) {
           </a>
         </ul>
 
-        <div className="hidden md:flex items-center gap-4 lg:px-20">
+        <div className="hidden md:flex items-center gap-4">
           <a
             href="https://courses.chaicode.com/learn/accounts/signin"
             target="_blank"
