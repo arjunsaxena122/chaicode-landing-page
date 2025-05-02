@@ -10,9 +10,8 @@ import Navbar from "./Components/Navbar/Navbar";
 import OpenSource from "./Components/OpenSource/OpenSource";
 import TagSection from "./Components/TagSection/TagSection";
 import Testimonial from "./Components/Testimonial/Testimonial";
-// import ProofCard from "./Components/ProofCard/ProofCard"
 import Tweeter from "./Components/Tweet/Tweeter";
-// import Udemy from "./Components/Udemy/Udemy";
+import Udemy from "./Components/Udemy/Udemy";
 
 function App() {
   const [themeToggle, setThemeToggle] = useState(false);
@@ -38,22 +37,21 @@ function App() {
   }, []);
 
   return (
-    <main className="max-w-7xl h-screen m-auto">
+    <>
       <Navbar themeToggle={themeToggle} handleThemeToggle={handleThemeToggle} />
       <HeroPage />
       <Tweeter />
-      {/* <ProofCard /> */}
       <LiveTrain />
       <Testimonial />
-      {/* <Udemy /> */}
+      <Udemy />
       <BenefitsCohort />
-      {/* <Feature /> */}
+      <Feature />
       <TagSection />
       <Community />
       <OpenSource />
       <AppDownload />
       <Footer themeToggle={themeToggle} />
-    </main>
+    </>
   );
 }
 

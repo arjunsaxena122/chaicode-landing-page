@@ -3,14 +3,14 @@ import BenefitsCard from "./BenefitsCard";
 function BenefitsCohort() {
   return (
     <section className="flex justify-center items-center flex-col px-4 md:px-10 md:my-10">
-      <h3 className="text-4xl text-center md:text-6xl my-4 font-bold">
+      <h3 className="text-3xl sm:text-4xl md:text-6xl my-4 font-bold text-center">
         Key Benefits of Cohorts
       </h3>
-      <p className="text-center text-md md:text-lg max-w-3xl">
-        Cohorts are best way to learn because you finish the course in a timely
-        manner
+      <p className="text-center text-sm sm:text-base md:text-lg max-w-xl">
+        Cohorts are the best way to learn because you finish the course in a
+        timely manner
       </p>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 my-10 md:my-20 md:px-8 py-10 gap-8 w-full">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-10 md:my-20 md:px-8 py-10 gap-8 w-full">
         <BenefitsCard
           link={"/images/professional.jpg"}
           imgAlt={"teaching"}
@@ -20,7 +20,7 @@ function BenefitsCohort() {
           }
         />
         <BenefitsCard
-          link={"/images/bounties.png"}
+          link={"/images/dollars.png"}
           imgAlt={"teaching"}
           title={"Bounties"}
           description={
@@ -28,7 +28,7 @@ function BenefitsCohort() {
           }
         />
         <BenefitsCard
-          link={"/chai-assets/chai-gray.png"}
+          link={"/images/hostel.png"}
           imgAlt={"teaching"}
           title={"Coding hostels"}
           description={
@@ -36,7 +36,7 @@ function BenefitsCohort() {
           }
         />
         <BenefitsCard
-          link={"/chai-assets/chai-gray.png"}
+          link={"/images/peer-reviews.png"}
           imgAlt={"teaching"}
           title={"Peer Code Reviews"}
           description={
@@ -44,7 +44,7 @@ function BenefitsCohort() {
           }
         />
         <BenefitsCard
-          link={"/chai-assets/chai-gray.png"}
+          link={"/images/leetlab.png"}
           imgAlt={"teaching"}
           title={"Leet Lab"}
           description={
@@ -52,7 +52,7 @@ function BenefitsCohort() {
           }
         />
         <BenefitsCard
-          link={"/chai-assets/chai-gray.png"}
+          link={"/images/revision-class.jpg"}
           imgAlt={"teaching"}
           title={"Revision classes"}
           description={
@@ -61,8 +61,7 @@ function BenefitsCohort() {
         />
       </div>
 
-      <div className="flex flex-col md:flex-row  justify-around items-center mb-20 border border-slate-800 rounded-xl py-10 px-6 md:px-8 shadow-sm shadow-amber-600 duration-400 transition-all ease-in-out w-full">
-
+      <div className="flex flex-col md:flex-row justify-around items-center mb-20 border border-slate-800 rounded-xl py-10 px-6 md:px-8 shadow-sm shadow-amber-600 duration-400 transition-all ease-in-out w-full">
         <div className="w-full md:w-1/2 flex justify-center items-center">
           <img
             src="/chai-assets/chai-gray.png"
@@ -71,13 +70,13 @@ function BenefitsCohort() {
           />
         </div>
         <div className="w-full md:w-1/2 py-10 md:px-4 flex items-start flex-col ">
-          <h3 className="text-3xl md:text-5xl text-center mb-4 text-[#F97316] font-bold">
+          <h3 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center mb-4 text-[#F97316] font-bold">
             Alumni Network and job listings
           </h3>
-          <p className="text-left text-sm md:text-base">
+          <p className="text-gray-300 text-left text-sm md:text-sm lg:text-base">
             The alumni network that you always wished for in your college. We
-            have a dedicated platform wehre students get to know each other, do
-            projects, make agencies and join Hackathons. Our HR team also post
+            have a dedicated platform where students get to know each other, do
+            projects, make agencies and join Hackathons. Our HR team also posts
             regular job updates that you can apply directly whenever you are
             ready.
           </p>
