@@ -1,8 +1,8 @@
 function FeatureCard({ title, description }) {
   return (
-    <div className="flex items-center px-6 py-6 flex-col border rounded-xl bg-gray-900 border-slate-700 shadow-lg hover:shadow-xl transition-all ease-in-out duration-300 w-full md:max-w-md">
-      <h3 className="text-2xl my-4 text-[#F97316] font-bold">{title}</h3>
-      <p className="text-justify text-white text-sm md:text-base">{description}</p>
+    <div className="flex flex-col items-center text-center p-6 rounded-2xl bg-white dark:bg-gray-800 border border-gray-900 dark:border-gray-700 shadow-sm transition-shadow duration-300 w-full max-w-md  shadow-black dark:shadow-white">
+      <h3 className="text-2xl font-bold text-orange-500 mb-4">{title}</h3>
+      <p className="text-gray-700 dark:text-gray-300 text-sm md:text-base text-justify">{description}</p>
     </div>
   );
 }

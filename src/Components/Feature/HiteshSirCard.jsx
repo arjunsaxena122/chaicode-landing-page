@@ -1,29 +1,25 @@
-import React from "react";
-
 function HiteshSirCard() {
   return (
-    <div className="border rounded-2xl overflow-hidden bg-gray-900 border-slate-800 w-full">
-      <div className="flex justify-center items-center ">
+    <div className="flex flex-col rounded-2xl overflow-hidden bg-white dark:bg-gray-800 border border-gray-900 dark:border-gray-700 shadow-sm shadow-black dark:shadow-white w-full max-w-md ">
+      <div className="w-full">
         <img
           src="/images/hiteshSir.webp"
           alt="hitest-sir-image"
-          className="w-full object-contain"
+          className="w-full object-cover"
         />
       </div>
-      <div className="flex flex-col items-center mx-4 my-8 px-2 gap-6 text-white">
-        <div className="flex items-start flex-col ">
-          <h3 className="text-3xl my-3 font-bold text-[#F97316]">
-            Hitesh Choudhary
-          </h3>
-          <p className="text-left text-gray-300">
+      <div className="flex flex-col gap-6 p-6 text-gray-700 dark:text-gray-300">
+        <div>
+          <h3 className="text-3xl font-bold text-orange-500 mb-2">Hitesh Choudhary</h3>
+          <p>
             retired from corporate and full time YouTuber, ex-founder of LCO
             (accquired), ex-CTO, Sr. Director at PW. 2 YT channels (950k &
             470k), stepped into 43 countrires.
           </p>
         </div>
-        <div className="flex items-start flex-col">
-          <h3 className="text-3xl my-3 font-bold text-[#F97316]">Approach</h3>
-          <p className="text-left text-gray-300">
+        <div>
+          <h3 className="text-3xl font-bold text-orange-500 mb-2">Approach</h3>
+          <p>
             Project based courses with peer learning and bounties with many
             activities
           </p>
