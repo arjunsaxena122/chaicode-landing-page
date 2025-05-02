@@ -20,9 +20,9 @@ function Footer({ themeToggle }) {
   ];
 
   return (
-    <footer className="flex justify-around items-center flex-col mt-10">
-      <div className="flex flex-wrap md:flex-nowrap justify-between items-center w-full">
-        <div className="w-full md:w-1/2 flex flex-col items-start gap-3 mx-20 my-10">
+    <footer className="flex justify-center items-center flex-col mt-10 px-4">
+      <div className="flex flex-col md:flex-row justify-between items-center w-full gap-10 md:gap-0 md:px-10">
+        <div className="w-full md:w-1/2 flex flex-col items-center md:items-start gap-3 my-10">
           <div className="flex items-center gap-1 max-w-[140px] px-2">
             {themeToggle ? (
               <img
@@ -38,11 +38,9 @@ function Footer({ themeToggle }) {
               />
             )}
           </div>
+          <p className="text-center md:text-left">Home for programmers</p>
 
-          <p>Home for programmers</p>
-
-          {/* Social Links */}
-          <div className="flex items-center gap-3 mt-2">
+          <div className="flex items-center justify-center gap-3 mt-2">
             <a href="#" aria-label="YouTube">
               <CiYoutube className="text-xl" />
             </a>
@@ -63,13 +61,12 @@ function Footer({ themeToggle }) {
             </a>
           </div>
 
-          <p className="text-sm mt-2">
+          <p className="text-sm mt-2 text-center md:text-left">
             &copy; 2025 ChaiCode. All rights reserved
           </p>
         </div>
 
         <div className="w-full md:w-1/2 flex flex-wrap md:flex-nowrap justify-evenly gap-10 px-5 py-10 md:py-0">
-          {/* Products */}
           <ul className="flex flex-col gap-3">
             <li className="font-bold text-lg">Products</li>
             {productLinks.map((item) => (
@@ -91,7 +88,7 @@ function Footer({ themeToggle }) {
       </div>
 
       <h2
-        className="text-5xl md:text-[200px] tracking-wider w-full text-center mt-20 mx-auto leading-none font-extrabold py-10 mb-5
+        className="text-5xl md:text-9xl lg:text-[150px] xl:text-[200px] tracking-wider w-full text-center mt-20 mx-auto leading-none font-extrabold py-10 mb-5
         text-transparent bg-clip-text
         bg-gradient-to-r from-orange-500 via-orange-400 to-orange-600
         dark:bg-gradient-to-r dark:from-[rgba(249,115,22,0.8)] dark:to-[rgba(249,115,22,0.2)]
