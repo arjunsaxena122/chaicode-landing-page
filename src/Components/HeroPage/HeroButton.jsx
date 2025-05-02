@@ -8,7 +8,7 @@ function HeroButton({ text }) {
       rel="noopener noreferrer"
       className="inline-block mt-4 md:mt-6"
     >
-      <button className="flex justify-center items-center px-5 py-2 md:px-8 md:py-3 rounded-lg text-sm md:text-lg font-semibold text-white bg-[#F97316] hover:bg-orange-600 shadow-md hover:shadow-lg gap-2 transition-all duration-300 ease-in-out">
+      <button className="flex justify-center items-center px-5 py-2 md:px-8 md:py-3 rounded-lg text-sm md:text-lg font-semibold text-white bg-[#F97316] hover:bg-orange-600 shadow-md hover:shadow-lg gap-2 transition-all duration-300 ease-in-out cursor-pointer">
         <IoCodeSlashSharp className="text-lg md:text-xl" />
         {text}
       </button>
