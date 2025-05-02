@@ -1,31 +1,59 @@
+import { Users } from "lucide-react";
+
 function Community() {
   return (
-    <section className="flex justify-center item-center flex-col px-8 py-2 mb-20  ">
-      <div className="flex flex-wrap justify-center my-10 px-2 py-5 shadow-sm shadow-black dark:shadow-white rounded-2xl">
-        <div className="flex items-center justify-center flex-col md:w-1/2 gap-10">
-          <h2 className="px-6 py-2 mx-auto md:mx-18 border border-gray-800 rounded bg-gray-900 font-bold text-white text-center ">
-            Community
-          </h2>
-          <h3 className="text-4xl text-left mx-6 md:text-6xl md:mx-0">
-            Join our <br /> community where <br /> creativity thrives.
-          </h3>
+    <section className="py-16 px-4 max-w-6xl mx-auto">
+      <div className="bg-white dark:bg-gradient-to-br dark:from-gray-900 dark:to-gray-800 bg-gradient-to-br from-gray-50 to-gray-100 rounded-3xl shadow-lg dark:shadow-xl overflow-hidden border border-gray-900 dark:border-gray-700">
+        <div className="flex flex-col md:flex-row">
+          {/* Left Content */}
+          <div className="w-full md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
+            <span className="flex justify-center items-center max-w-[100px] px-4 py-1 bg-yellow-600 text-white text-sm font-medium rounded-full mb-6">
+              Community
+            </span>
+
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 dark:text-white mb-6 leading-tight">
+              Join our community where creativity thrives
+            </h2>
+
+            <p className="text-gray-600 dark:text-gray-300 mb-8 text-lg">
+              Connect with 80,000+ passionate developers sharing knowledge,
+              projects, and inspiration.
+            </p>
+
+            <a
+              href="https://hitesh.ai/discord"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group"
+            >
+              <button className="flex items-center justify-center gap-3 bg-yellow-600 hover:bg-yellow-700 text-black font-bold py-4 px-8 rounded-xl transition-all duration-300 transform group-hover:scale-95 w-full md:w-auto cursor-pointer shadow-md">
+                <Users size={24} />
+                <div className="text-left">
+                  <span className="block font-bold">80,000+</span>
+                  <span className="block text-sm">Active coders</span>
+                </div>
+              </button>
+            </a>
+          </div>
+
+          {/* Right Image */}
+          <div className="w-full md:w-1/2 relative">
+            {/* Background pattern */}
+            <div className="absolute inset-0 opacity-10 dark:opacity-20 bg-grid-pattern"></div>
+            
+            {/* Discord Image */}
+            <div className="relative h-full flex items-center justify-center p-8">
+              <div className="relative w-full max-w-md aspect-square rounded-full overflow-hidden border-2 border-yellow-600 shadow-xl dark:shadow-2xl transform transition-transform duration-500 hover:scale-105">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                <img
+                  src="/images/discord.jpg"
+                  alt="Discord community"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="my-10 w-full md:w-1/2">
-          <img
-            src="images/discord.jpg"
-            alt="discord-image"
-            className="w-full h-full object-cover overflow-hidden rounded-full"
-          />
-        </div>
-        <a
-          href="https://hitesh.ai/discord"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <button className="self-center w-fit flex justify-center items-center border md:px-15 md:py-4 md:my-8 px-6 py-3 rounded-2xl bg-[#ca8a04] border-[#a97913] mb-10 cursor-pointer text-black font-bold text-sm md:text-lg transition-transform ease-in-out duration-300 hover:scale-95 outline-none">
-            80,000 Active <br /> coders in Discord
-          </button>
-        </a>
       </div>
     </section>
   );
