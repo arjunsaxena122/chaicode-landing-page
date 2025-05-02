@@ -6,11 +6,11 @@ function LiveTrain() {
       className="flex justify-center items-center flex-col md:py-10 my-20 w-full"
       id="cohort"
     >
-      <h3 className="text-6xl my-2 text-[#F97316] font-bold text-center">
+      <h2 className="text-6xl my-2 text-[#F97316] font-bold text-center">
         Cohorts
-      </h3>
+      </h2>
       <h4 className="text-lg md:text-3xl text-center">Live training classes</h4>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-14 place-items-center md:mx-0 md:gap-12 md:px-3 my-10 mx-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 md:gap-12 place-items-center px-4 my-10">
         <LiveCard
           video={
             "https://www.youtube.com/embed/yG8JMlldoCE?si=EuuQ8_cebotALF68"
