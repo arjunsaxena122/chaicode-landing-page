@@ -3,7 +3,7 @@ import { Users } from "lucide-react";
 function Community() {
   return (
     <section className="py-16 px-4 max-w-6xl mx-auto">
-      <div className="bg-white dark:bg-gradient-to-br dark:from-gray-900 dark:to-gray-800 bg-gradient-to-br from-gray-50 to-gray-100 rounded-3xl shadow-lg dark:shadow-xl overflow-hidden border border-gray-900 dark:border-gray-700">
+      <div className="bg-white dark:bg-gradient-to-br dark:from-gray-900 dark:to-gray-800 bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl shadow-lg dark:shadow-xl overflow-hidden  dark:border-gray-700">
         <div className="flex flex-col md:flex-row">
           {/* Left Content */}
           <div className="w-full md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
@@ -24,9 +24,9 @@ function Community() {
               href="https://hitesh.ai/discord"
               target="_blank"
               rel="noopener noreferrer"
-              className="group"
+              className="group "
             >
-              <button className="flex items-center justify-center gap-3 bg-yellow-600 hover:bg-yellow-700 text-black font-bold py-4 px-8 rounded-xl transition-all duration-300 transform group-hover:scale-95 w-full md:w-auto cursor-pointer shadow-md">
+              <button className="flex items-center justify-center gap-3 bg-yellow-600 hover:bg-yellow-500 text-black font-bold py-4 px-8 rounded-xl transition-all duration-300 transform group-hover:scale-95 w-full md:w-auto cursor-pointer shadow-md">
                 <Users size={24} />
                 <div className="text-left">
                   <span className="block font-bold">80,000+</span>
