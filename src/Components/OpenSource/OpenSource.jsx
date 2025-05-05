@@ -18,7 +18,7 @@ function OpenSource() {
       </div>
 
       <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-center">
-        <div className="bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-lg border border-gray-900 dark:border-gray-700 transform transition-all duration-300 hover:shadow-xl">
+        <div className="dark:bg-gray-800 rounded-2xl overflow-hidden shadow-md shadow-amber-700 transform transition-all duration-300 dark:hover:shadow-xl">
           <div className="p-6 md:p-8">
             <div className="flex items-center gap-3 mb-6">
               <div className="p-3 bg-orange-100 dark:bg-orange-900/30 rounded-lg">
@@ -73,7 +73,7 @@ function OpenSource() {
           <div className="h-2 bg-gradient-to-r from-orange-500 to-orange-600"></div>
         </div>
         
-        <div className="rounded-2xl overflow-hidden shadow-lg border border-gray-900 dark:border-gray-700 bg-gray-50 dark:bg-gray-800">
+        <div className="rounded-2xl overflow-hidden shadow-md shadow-amber-700 bg-gray-50 dark:bg-gray-800">
           <div className="aspect-video relative">
             <div className="absolute inset-0 bg-gradient-to-br from-orange-500/10 to-purple-500/10 dark:from-orange-500/5 dark:to-purple-500/5 backdrop-blur-sm rounded-t-2xl"></div>
             
@@ -86,7 +86,7 @@ function OpenSource() {
             ></iframe>
           </div>
           
-          <div className="p-6 md:p-8 bg-white dark:bg-gray-800 border-t border-gray-100 dark:border-gray-700">
+          <div className="p-6 md:p-8 dark:bg-gray-800 border-t border-gray-100 dark:border-gray-700">
             <h4 className="font-bold text-gray-800 dark:text-white mb-3">Why Use FreeAPI?</h4>
             <ul className="space-y-2">
               <li className="flex items-start gap-2">
@@ -107,19 +107,19 @@ function OpenSource() {
       </div>
       
       <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
-        <div className="bg-white dark:bg-gray-800 p-6 rounded-xl border border-gray-500 dark:border-gray-700 text-center">
+        <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-sm shadow-gray-400 text-center">
           <div className="text-3xl md:text-4xl font-bold text-orange-500 dark:text-orange-400 mb-2">50+</div>
           <div className="text-gray-600 dark:text-gray-300 ">Free APIs</div>
         </div>
-        <div className="bg-white dark:bg-gray-800 p-6 rounded-xl border border-gray-500 dark:border-gray-700 text-center">
+        <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-sm shadow-gray-400  text-center">
           <div className="text-3xl md:text-4xl font-bold text-orange-500 dark:text-orange-400 mb-2">10k+</div>
           <div className="text-gray-600 dark:text-gray-300">Developers</div>
         </div>
-        <div className="bg-white dark:bg-gray-800 p-6 rounded-xl border border-gray-500 dark:border-gray-700 text-center">
+        <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-sm shadow-gray-400 text-center">
           <div className="text-3xl md:text-4xl font-bold text-orange-500 dark:text-orange-400 mb-2">100%</div>
           <div className="text-gray-600 dark:text-gray-300">Free Access</div>
         </div>
-        <div className="bg-white dark:bg-gray-800 p-6 rounded-xl border border-gray-500 dark:border-gray-700 text-center">
+        <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-sm shadow-gray-400 text-center">
           <div className="text-3xl md:text-4xl font-bold text-orange-500 dark:text-orange-400 mb-2">24/7</div>
           <div className="text-gray-600 dark:text-gray-300">Support</div>
         </div>
