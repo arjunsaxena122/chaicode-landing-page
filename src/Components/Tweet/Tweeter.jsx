@@ -18,7 +18,7 @@ function Tweeter() {
         <TweetCard id="1906393735203836076" />
       </div>
      
-    </section>
+    </section> 
   );
 }
 

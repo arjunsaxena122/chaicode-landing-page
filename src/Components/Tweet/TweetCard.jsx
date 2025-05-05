@@ -2,7 +2,7 @@ import { Tweet, TweetSkeleton } from "react-tweet";
 
 function TweetCard({ id }) {
   return (
-    <div className="w-full max-w-md border border-slate-600  overflow-hidden rounded-2xl flex items-center flex-col px-4 bg-gray-900 cursor-pointer  transition-transform ease-in-out duration-300 hover:scale-101 hover:shadow-amber-700 hover:shadow-lg">
+    <div className="w-full max-w-md dark:border dark:border-slate-600  overflow-hidden rounded-2xl flex items-center flex-col px-4 dark:bg-gray-900 cursor-pointer  transition-transform ease-in-out duration-300 hover:scale-101 hover:shadow-cyan-400 hover:shadow-md">
       <Tweet
         id={id}
         fallback={
