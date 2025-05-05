@@ -1,6 +1,6 @@
 function HiteshSirCard() {
   return (
-    <div className="flex flex-col rounded-2xl overflow-hidden bg-white dark:bg-gray-800 border border-gray-900 dark:border-gray-700 shadow-sm shadow-black dark:shadow-white w-full max-w-md ">
+    <div className="flex flex-col rounded-2xl overflow-hidden dark:bg-gray-950 shadow-sm shadow-black dark:shadow-white w-full max-w-md ">
       <div className="w-full">
         <img
           src="/images/hiteshSir.webp"
