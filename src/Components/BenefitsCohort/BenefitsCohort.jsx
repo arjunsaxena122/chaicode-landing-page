@@ -61,7 +61,7 @@ function BenefitsCohort() {
         />
       </div>
 
-      <div className="flex flex-col md:flex-row justify-around items-center mb-20 border border-slate-800 rounded-xl py-10 px-6 md:px-8 shadow-sm shadow-amber-600 duration-400 transition-all ease-in-out w-full">
+      <div className="flex flex-col md:flex-row justify-around items-center mb-20  rounded-xl py-10 px-6 md:px-8 shadow-sm shadow-amber-600 duration-400 transition-all ease-in-out w-full">
         <div className="w-full md:w-1/2 flex justify-center items-center">
           <img
             src="/chai-assets/chai-gray.png"
@@ -73,7 +73,7 @@ function BenefitsCohort() {
           <h3 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center mb-4 text-[#F97316] font-bold">
             Alumni Network and job listings
           </h3>
-          <p className="text-gray-300 text-left text-sm md:text-sm lg:text-base">
+          <p className="text-gray-700 dark:text-gray-300 text-left text-sm md:text-sm lg:text-base">
             The alumni network that you always wished for in your college. We
             have a dedicated platform where students get to know each other, do
             projects, make agencies and join Hackathons. Our HR team also posts
