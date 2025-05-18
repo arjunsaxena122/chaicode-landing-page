@@ -41,7 +41,7 @@ function Testimonial() {
         </div>
       </div>
 
-      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-orange-50 dark:from-gray-800 to-transparent"></div>
+      {/* <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-orange-50 dark:from-gray-800 to-transparent"></div> */}
     </section>
   );
 }
